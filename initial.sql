@@ -1,0 +1,268 @@
+CREATE TABLE `pessoas` (
+  `id` int DEFAULT NULL,
+  `nome` varchar(100) DEFAULT NULL,
+  `data_nascimento` date DEFAULT NULL,
+  `sexo` varchar(20) DEFAULT NULL,
+  `renda_familiar` double DEFAULT NULL,
+  `time_favorito` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL
+);
+
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (1,'Ana Maria Silva','1985-04-15','F',4500.0,'Flamengo','ana_maria_silva@example.com'),
+	 (2,'João Pedro Lima','1990-11-23','M',6200.0,'Corinthians','joão_pedro_lima@example.com'),
+	 (3,'Beatriz Souza','1978-02-08','F',3800.0,'Palmeiras','beatriz_souza@example.com'),
+	 (4,'Carlos Alberto','1982-06-30','M',7000.0,'São Paulo','carlos_alberto@example.com'),
+	 (5,'Daniela Costa','1995-09-12','F',5300.0,'Vasco da Gama','daniela_costa@example.com'),
+	 (6,'Eduardo Rocha','1980-01-05','M',4900.0,'Santos','eduardo_rocha@example.com'),
+	 (7,'Fernanda Ribeiro','1992-03-14','F',6700.0,'Internacional','fernanda_ribeiro@example.com'),
+	 (8,'Gabriel Souza','1986-07-22','M',5400.0,'Grêmio','gabriel_souza@example.com'),
+	 (9,'Helena Martins','1989-05-10','F',4300.0,'Cruzeiro','helena_martins@example.com'),
+	 (10,'Igor Fernandes','1984-07-25','M',7500.0,'Atlético Mineiro','igor_fernandes@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (11,'Júlia Alves','1965-02-15','F',6000.0,'Botafogo','júlia_alves@example.com'),
+	 (12,'Luiz Oliveira','1973-12-20','M',5800.0,'Fluminense','luiz_oliveira@example.com'),
+	 (13,'Marina Santos','2005-10-11','F',3600.0,'Flamengo','marina_santos@example.com'),
+	 (14,'Nelson Costa','1960-01-01','M',7200.0,'Vasco da Gama','nelson_costa@example.com'),
+	 (15,'Olga Ferreira','1948-03-22','F',2500.0,'Bahia','olga_ferreira@example.com'),
+	 (16,'Paulo Ribeiro','1976-08-18','M',4900.0,'Grêmio','paulo_ribeiro@example.com'),
+	 (17,'Quitéria Nunes','1943-06-09','F',3200.0,'Fortaleza','quitéria_nunes@example.com'),
+	 (18,'Rafael Cardoso','2000-07-27','M',5100.0,'Corinthians','rafael_cardoso@example.com'),
+	 (19,'Sara Gomes','1988-05-05','F',6300.0,'São Paulo','sara_gomes@example.com'),
+	 (20,'Tiago Araújo','1994-11-13','M',4500.0,'Palmeiras','tiago_araújo@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (21,'Ulisses Mendes','1955-04-30','M',3700.0,'Flamengo','ulisses_mendes@example.com'),
+	 (22,'Vânia Souza','1999-02-16','F',6800.0,'Atlético Mineiro','vânia_souza@example.com'),
+	 (23,'Wagner Lopes','2009-12-08','M',2900.0,'Santos','wagner_lopes@example.com'),
+	 (24,'Xavier Pereira','1940-01-03','M',4100.0,'Internacional','xavier_pereira@example.com'),
+	 (25,'Yara Barbosa','1967-08-24','F',5600.0,'São Paulo','yara_barbosa@example.com'),
+	 (26,'Zeca Borges','1958-07-19','M',3800.0,'Vasco da Gama','zeca_borges@example.com'),
+	 (27,'Alice Matos','2012-06-14','F',4500.0,'Cruzeiro','alice_matos@example.com'),
+	 (28,'Bruno Lima','2002-09-21','M',6200.0,'Palmeiras','bruno_lima@example.com'),
+	 (29,'Carolina Dias','1981-11-10','F',3800.0,'Fluminense','carolina_dias@example.com'),
+	 (30,'Diego Moreira','1996-04-07','M',7000.0,'Corinthians','diego_moreira@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (31,'Esther Franco','1938-03-12','F',5300.0,'Bahia','esther_franco@example.com'),
+	 (32,'Fábio Henrique','1980-10-02','M',4900.0,'Internacional','fábio_henrique@example.com'),
+	 (33,'Glória Martins','1952-05-29','F',6700.0,'Flamengo','glória_martins@example.com'),
+	 (34,'Heitor Rocha','2010-08-01','M',5400.0,'Vasco da Gama','heitor_rocha@example.com'),
+	 (35,'Isabela Teixeira','1993-12-25','F',4300.0,'Palmeiras','isabela_teixeira@example.com'),
+	 (36,'João Victor','1984-07-16','M',7500.0,'Santos','joão_victor@example.com'),
+	 (37,'Karina Castro','1970-11-13','F',4100.0,'Fluminense','karina_castro@example.com'),
+	 (38,'Leonardo Cunha','2007-05-22','M',6300.0,'São Paulo','leonardo_cunha@example.com'),
+	 (39,'Mariana Lemos','1979-02-04','F',5000.0,'Grêmio','mariana_lemos@example.com'),
+	 (40,'Nathan Ferreira','2001-11-26','M',4600.0,'Botafogo','nathan_ferreira@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (41,'Olivia Silveira','2013-03-19','F',3200.0,'Vasco da Gama','olivia_silveira@example.com'),
+	 (42,'Pedro Almeida','1997-08-30','M',5900.0,'Palmeiras','pedro_almeida@example.com'),
+	 (43,'Quitéria Costa','1954-09-08','F',6500.0,'Flamengo','quitéria_costa@example.com'),
+	 (44,'Raul Santos','1986-06-06','M',7300.0,'Corinthians','raul_santos@example.com'),
+	 (45,'Sabrina Neves','2004-10-17','F',5200.0,'São Paulo','sabrina_neves@example.com'),
+	 (46,'Tomás Souza','1946-07-11','M',3400.0,'Grêmio','tomás_souza@example.com'),
+	 (47,'Ulysses Mendes','1969-02-28','M',6800.0,'Flamengo','ulysses_mendes@example.com'),
+	 (48,'Valentina Reis','2008-07-26','F',4100.0,'Vasco da Gama','valentina_reis@example.com'),
+	 (49,'Wellington Lopes','1983-04-22','M',7000.0,'Palmeiras','wellington_lopes@example.com'),
+	 (50,'Ximena Oliveira','1977-08-12','F',3900.0,'Fluminense','ximena_oliveira@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (51,'Yuri Santos','1991-11-20','M',4700.0,'Flamengo','yuri_santos@example.com'),
+	 (52,'Zuleica Gomes','1941-06-05','F',5600.0,'Bahia','zuleica_gomes@example.com'),
+	 (53,'Artur Ribeiro','2006-09-14','M',3800.0,'Internacional','artur_ribeiro@example.com'),
+	 (54,'Beatriz Costa','1982-12-01','F',6500.0,'São Paulo','beatriz_costa@example.com'),
+	 (55,'Caio Nunes','2015-05-18','M',4300.0,'Flamengo','caio_nunes@example.com'),
+	 (56,'Débora Souza','1972-11-27','F',7200.0,'Vasco da Gama','débora_souza@example.com'),
+	 (57,'Enzo Martins','2003-03-06','M',5900.0,'Corinthians','enzo_martins@example.com'),
+	 (58,'Fabiana Dias','1963-08-19','F',3600.0,'São Paulo','fabiana_dias@example.com'),
+	 (59,'Gustavo Lima','1971-04-25','M',5000.0,'Palmeiras','gustavo_lima@example.com'),
+	 (60,'Helena Ribeiro','1998-12-11','F',6700.0,'Grêmio','helena_ribeiro@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (61,'Ian Ferreira','1985-07-13','M',4500.0,'Flamengo','ian_ferreira@example.com'),
+	 (62,'Janaína Franco','1947-02-15','F',5300.0,'Fluminense','janaína_franco@example.com'),
+	 (63,'Kátia Mendes','1989-11-02','F',6000.0,'São Paulo','kátia_mendes@example.com'),
+	 (64,'Lucas Rocha','1990-01-08','M',4400.0,'Corinthians','lucas_rocha@example.com'),
+	 (65,'Mariana Teixeira','1995-05-19','F',7100.0,'Santos','mariana_teixeira@example.com'),
+	 (66,'Nicolas Almeida','2016-10-21','M',3900.0,'Vasco da Gama','nicolas_almeida@example.com'),
+	 (67,'Olivia Sousa','1988-03-30','F',5800.0,'Internacional','olivia_sousa@example.com'),
+	 (68,'Paulo Gomes','1966-06-06','M',6500.0,'São Paulo','paulo_gomes@example.com'),
+	 (69,'Quitéria Souza','1983-12-22','F',4300.0,'Palmeiras','quitéria_souza@example.com'),
+	 (70,'Ricardo Lemos','1975-08-10','M',6200.0,'Fluminense','ricardo_lemos@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (71,'Sofia Reis','2011-01-07','F',3700.0,'Flamengo','sofia_reis@example.com'),
+	 (72,'Thiago Santos','1992-09-15','M',7300.0,'Corinthians','thiago_santos@example.com'),
+	 (73,'Ubirajara Lima','1950-02-17','M',5900.0,'São Paulo','ubirajara_lima@example.com'),
+	 (74,'Vitória Neves','2009-04-28','F',4600.0,'Palmeiras','vitória_neves@example.com'),
+	 (75,'Willian Barbosa','2004-10-04','M',6000.0,'Vasco da Gama','willian_barbosa@example.com'),
+	 (76,'Xuxa Pereira','1945-11-12','F',5100.0,'Grêmio','xuxa_pereira@example.com'),
+	 (77,'Yasmin Rocha','1999-07-25','F',6700.0,'Flamengo','yasmin_rocha@example.com'),
+	 (78,'Zeca Oliveira','1978-12-23','M',4800.0,'Internacional','zeca_oliveira@example.com'),
+	 (79,'Amanda Ferreira','2014-05-11','F',3400.0,'São Paulo','amanda_ferreira@example.com'),
+	 (80,'Bruno Sousa','2000-10-19','M',4900.0,'Flamengo','bruno_sousa@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (81,'Camila Lima','1986-06-21','F',5300.0,'Vasco da Gama','camila_lima@example.com'),
+	 (82,'Daniel Ribeiro','1974-09-05','M',6700.0,'Corinthians','daniel_ribeiro@example.com'),
+	 (83,'Eduarda Silva','1991-02-14','F',4600.0,'São Paulo','eduarda_silva@example.com'),
+	 (84,'Felipe Gomes','1973-03-20','M',5900.0,'Palmeiras','felipe_gomes@example.com'),
+	 (85,'Gabriela Rocha','1998-11-03','F',6100.0,'Flamengo','gabriela_rocha@example.com'),
+	 (86,'Henrique Costa','2005-12-08','M',4500.0,'Vasco da Gama','henrique_costa@example.com'),
+	 (87,'Ingrid Nunes','1961-04-27','F',3800.0,'São Paulo','ingrid_nunes@example.com'),
+	 (88,'Jorge Teixeira','1969-01-16','M',6500.0,'Fluminense','jorge_teixeira@example.com'),
+	 (89,'Karla Martins','1994-07-02','F',5200.0,'Corinthians','karla_martins@example.com'),
+	 (90,'Leandro Oliveira','1987-11-23','M',4700.0,'Flamengo','leandro_oliveira@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (91,'Mariana Silva','2007-08-10','F',3900.0,'Vasco da Gama','mariana_silva@example.com'),
+	 (92,'Nathan Souza','2018-05-05','M',5600.0,'Internacional','nathan_souza@example.com'),
+	 (93,'Olivia Alves','1979-10-14','F',4300.0,'São Paulo','olivia_alves@example.com'),
+	 (94,'Pedro Mendes','1951-12-19','M',6200.0,'Palmeiras','pedro_mendes@example.com'),
+	 (95,'Quitéria Dias','1964-04-26','F',4500.0,'Vasco da Gama','quitéria_dias@example.com'),
+	 (96,'Ricardo Costa','1980-03-11','M',7500.0,'Flamengo','ricardo_costa@example.com'),
+	 (97,'Sabrina Ribeiro','2002-09-24','F',3600.0,'São Paulo','sabrina_ribeiro@example.com'),
+	 (98,'Thiago Oliveira','1996-11-07','M',6800.0,'Fluminense','thiago_oliveira@example.com'),
+	 (99,'Ulysses Santos','1970-07-26','M',4700.0,'Flamengo','ulysses_santos@example.com'),
+	 (100,'Vanessa Lima','1993-08-30','F',5300.0,'Corinthians','vanessa_lima@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (101,'Wesley Ferreira','1985-07-12','M',4600.0,'Vasco da Gama','wesley_ferreira@example.com'),
+	 (102,'Xandão Oliveira','2012-06-22','M',6000.0,'Internacional','xandão_oliveira@example.com'),
+	 (103,'Yasmin Martins','2019-02-19','F',3200.0,'Flamengo','yasmin_martins@example.com'),
+	 (104,'Zuleica Mendes','1981-09-04','F',5500.0,'São Paulo','zuleica_mendes@example.com'),
+	 (105,'Artur Souza','1948-01-18','M',3800.0,'Palmeiras','artur_souza@example.com'),
+	 (106,'Beatriz Silva','1990-08-25','F',6300.0,'Vasco da Gama','beatriz_silva@example.com'),
+	 (107,'Caio Gomes','2004-03-12','M',4200.0,'Internacional','caio_gomes@example.com'),
+	 (108,'Daniela Santos','1977-10-09','F',5900.0,'São Paulo','daniela_santos@example.com'),
+	 (109,'Enrico Lima','2016-05-05','M',4700.0,'Flamengo','enrico_lima@example.com'),
+	 (110,'Fernanda Nunes','1995-12-20','F',6200.0,'Corinthians','fernanda_nunes@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (111,'Gustavo Ribeiro','1960-06-14','M',5000.0,'Palmeiras','gustavo_ribeiro@example.com'),
+	 (112,'Helena Mendes','2003-11-11','F',4500.0,'São Paulo','helena_mendes@example.com'),
+	 (113,'Isadora Alves','1984-04-29','F',3600.0,'Vasco da Gama','isadora_alves@example.com'),
+	 (114,'João Victor','1972-07-07','M',6800.0,'Internacional','joão_victor@example.com'),
+	 (115,'Karina Ferreira','1989-10-22','F',4300.0,'São Paulo','karina_ferreira@example.com'),
+	 (116,'Lucas Souza','1999-01-15','M',5700.0,'Fluminense','lucas_souza@example.com'),
+	 (117,'Marcela Rocha','2011-08-02','F',4100.0,'Flamengo','marcela_rocha@example.com'),
+	 (118,'Nicolas Teixeira','2000-09-25','M',5600.0,'São Paulo','nicolas_teixeira@example.com'),
+	 (119,'Olivia Ferreira','1944-02-18','F',3900.0,'Internacional','olivia_ferreira@example.com'),
+	 (120,'Pedro Dias','1982-11-09','M',6300.0,'Palmeiras','pedro_dias@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (121,'Quitéria Souza','2006-12-17','F',4500.0,'Flamengo','quitéria_souza@example.com'),
+	 (122,'Rafael Lima','1967-06-03','M',5200.0,'Vasco da Gama','rafael_lima@example.com'),
+	 (123,'Sabrina Martins','1994-07-08','F',6000.0,'São Paulo','sabrina_martins@example.com'),
+	 (124,'Thiago Ferreira','2014-08-16','M',4100.0,'Corinthians','thiago_ferreira@example.com'),
+	 (125,'Ulysses Dias','1956-02-13','M',6700.0,'Flamengo','ulysses_dias@example.com'),
+	 (126,'Vitória Teixeira','1997-03-20','F',5900.0,'Vasco da Gama','vitória_teixeira@example.com'),
+	 (127,'Wagner Santos','2001-07-25','M',4500.0,'São Paulo','wagner_santos@example.com'),
+	 (128,'Xuxa Oliveira','1949-05-18','F',3700.0,'Internacional','xuxa_oliveira@example.com'),
+	 (129,'Yasmin Ferreira','1986-04-06','F',6200.0,'Flamengo','yasmin_ferreira@example.com'),
+	 (130,'Zeca Mendes','1995-09-30','M',5100.0,'São Paulo','zeca_mendes@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (131,'Amanda Souza','2012-11-19','F',4300.0,'Fluminense','amanda_souza@example.com'),
+	 (132,'Bruno Ribeiro','2019-03-14','M',3800.0,'Corinthians','bruno_ribeiro@example.com'),
+	 (133,'Camila Gomes','1990-07-03','F',5600.0,'Vasco da Gama','camila_gomes@example.com'),
+	 (134,'Diego Lima','2000-01-25','M',6500.0,'Flamengo','diego_lima@example.com'),
+	 (135,'Eduardo Santos','1981-10-29','M',4400.0,'São Paulo','eduardo_santos@example.com'),
+	 (136,'Felipe Nunes','2015-05-09','M',5200.0,'Palmeiras','felipe_nunes@example.com'),
+	 (137,'Gabriela Rocha','1968-09-23','F',6000.0,'Internacional','gabriela_rocha@example.com'),
+	 (138,'Henrique Teixeira','1988-06-18','M',4700.0,'São Paulo','henrique_teixeira@example.com'),
+	 (139,'Isabela Dias','1942-04-07','F',3600.0,'Fluminense','isabela_dias@example.com'),
+	 (140,'João Victor','2004-12-14','M',5500.0,'Flamengo','joão_victor@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (141,'Karla Mendes','1991-07-20','F',4100.0,'Corinthians','karla_mendes@example.com'),
+	 (142,'Leonardo Costa','1980-02-11','M',6300.0,'Vasco da Gama','leonardo_costa@example.com'),
+	 (143,'Mariana Souza','2003-08-27','F',4200.0,'Internacional','mariana_souza@example.com'),
+	 (144,'Nathan Ribeiro','1993-10-05','M',5800.0,'São Paulo','nathan_ribeiro@example.com'),
+	 (145,'Olivia Ferreira','1940-11-16','F',4500.0,'Palmeiras','olivia_ferreira@example.com'),
+	 (146,'Paulo Nunes','2013-03-04','M',3900.0,'Flamengo','paulo_nunes@example.com'),
+	 (147,'Quitéria Gomes','1971-12-30','F',5300.0,'Vasco da Gama','quitéria_gomes@example.com'),
+	 (148,'Rafael Teixeira','1987-01-07','M',6000.0,'São Paulo','rafael_teixeira@example.com'),
+	 (149,'Sabrina Lima','1998-06-25','F',4700.0,'Corinthians','sabrina_lima@example.com'),
+	 (150,'Thiago Souza','2009-02-12','M',5600.0,'Fluminense','thiago_souza@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (151,'Ulysses Dias','1965-08-18','M',6300.0,'Internacional','ulysses_dias@example.com'),
+	 (152,'Vitória Rocha','1979-11-13','F',5200.0,'São Paulo','vitória_rocha@example.com'),
+	 (153,'Wagner Teixeira','2006-01-22','M',4900.0,'Flamengo','wagner_teixeira@example.com'),
+	 (154,'Xuxa Santos','1984-04-05','F',3400.0,'Corinthians','xuxa_santos@example.com'),
+	 (155,'Yasmin Martins','1953-07-26','F',5800.0,'Vasco da Gama','yasmin_martins@example.com'),
+	 (156,'Zuleica Gomes','1992-02-02','F',6700.0,'São Paulo','zuleica_gomes@example.com'),
+	 (157,'Artur Ribeiro','1990-09-19','M',4500.0,'Flamengo','artur_ribeiro@example.com'),
+	 (158,'Beatriz Souza','1966-05-15','F',5900.0,'Corinthians','beatriz_souza@example.com'),
+	 (159,'Caio Nunes','1985-12-11','M',6200.0,'Vasco da Gama','caio_nunes@example.com'),
+	 (160,'Daniela Lima','2017-03-27','F',4300.0,'São Paulo','daniela_lima@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (161,'Enzo Teixeira','2004-04-09','M',5700.0,'Flamengo','enzo_teixeira@example.com'),
+	 (162,'Fabiana Ribeiro','1976-06-12','F',6100.0,'Corinthians','fabiana_ribeiro@example.com'),
+	 (163,'Gabriel Dias','1983-02-28','M',4500.0,'São Paulo','gabriel_dias@example.com'),
+	 (164,'Helena Costa','2014-11-18','F',3600.0,'Fluminense','helena_costa@example.com'),
+	 (165,'Isabela Mendes','2008-08-05','F',5200.0,'Flamengo','isabela_mendes@example.com'),
+	 (166,'João Victor','1964-10-21','M',6900.0,'Corinthians','joão_victor@example.com'),
+	 (167,'Karina Oliveira','1950-05-12','F',4700.0,'São Paulo','karina_oliveira@example.com'),
+	 (168,'Lucas Ribeiro','1997-07-14','M',5300.0,'Flamengo','lucas_ribeiro@example.com'),
+	 (169,'Mariana Teixeira','2001-03-29','F',4800.0,'Fluminense','mariana_teixeira@example.com'),
+	 (170,'Nicolas Santos','1998-02-16','M',6000.0,'Vasco da Gama','nicolas_santos@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (171,'Olivia Rocha','1943-09-02','F',3500.0,'São Paulo','olivia_rocha@example.com'),
+	 (172,'Pedro Ferreira','1996-11-08','M',5600.0,'Flamengo','pedro_ferreira@example.com'),
+	 (173,'Quitéria Gomes','1980-12-17','F',4100.0,'Corinthians','quitéria_gomes@example.com'),
+	 (174,'Rafael Lima','1978-04-04','M',6700.0,'São Paulo','rafael_lima@example.com'),
+	 (175,'Sabrina Souza','2005-08-25','F',5200.0,'Fluminense','sabrina_souza@example.com'),
+	 (176,'Thiago Dias','2017-10-12','M',4400.0,'Flamengo','thiago_dias@example.com'),
+	 (177,'Ulysses Mendes','1999-05-11','M',6300.0,'São Paulo','ulysses_mendes@example.com'),
+	 (178,'Vitória Teixeira','1952-01-18','F',3700.0,'Corinthians','vitória_teixeira@example.com'),
+	 (179,'Wagner Santos','2010-09-09','M',5800.0,'Flamengo','wagner_santos@example.com'),
+	 (180,'Xuxa Ribeiro','1955-12-26','F',4200.0,'São Paulo','xuxa_ribeiro@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (181,'Yasmin Martins','2002-06-14','F',5900.0,'Fluminense','yasmin_martins@example.com'),
+	 (182,'Zeca Teixeira','1973-07-03','M',6000.0,'Flamengo','zeca_teixeira@example.com'),
+	 (183,'Amanda Costa','1994-02-20','F',4500.0,'Corinthians','amanda_costa@example.com'),
+	 (184,'Bruno Lima','1981-01-12','M',5600.0,'São Paulo','bruno_lima@example.com'),
+	 (185,'Carolina Santos','1988-07-25','F',6200.0,'Fluminense','carolina_santos@example.com'),
+	 (186,'Diego Mendes','2016-11-03','M',4900.0,'Flamengo','diego_mendes@example.com'),
+	 (187,'Ester Souza','1959-05-21','F',3800.0,'São Paulo','ester_souza@example.com'),
+	 (188,'Felipe Nunes','1993-12-07','M',5500.0,'Corinthians','felipe_nunes@example.com'),
+	 (189,'Gabriela Oliveira','1974-07-26','F',6300.0,'São Paulo','gabriela_oliveira@example.com'),
+	 (190,'Henrique Mendes','1997-04-16','M',4700.0,'Fluminense','henrique_mendes@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (191,'Ingrid Dias','1947-09-04','F',5100.0,'Flamengo','ingrid_dias@example.com'),
+	 (192,'João Victor','2005-02-14','M',3600.0,'São Paulo','joão_victor@example.com'),
+	 (193,'Karina Ribeiro','1987-06-19','F',6700.0,'Fluminense','karina_ribeiro@example.com'),
+	 (194,'Leonardo Lima','2001-11-30','M',5200.0,'Flamengo','leonardo_lima@example.com'),
+	 (195,'Mariana Silva','1980-07-23','F',4500.0,'Corinthians','mariana_silva@example.com'),
+	 (196,'Nathan Nunes','2018-03-05','M',5800.0,'São Paulo','nathan_nunes@example.com'),
+	 (197,'Olivia Gomes','1969-08-14','F',3900.0,'Fluminense','olivia_gomes@example.com'),
+	 (198,'Pedro Rocha','2000-01-02','M',6100.0,'Flamengo','pedro_rocha@example.com'),
+	 (199,'Quitéria Teixeira','1976-04-29','F',5400.0,'Corinthians','quitéria_teixeira@example.com'),
+	 (200,'Rafael Ribeiro','1982-05-10','M',4200.0,'São Paulo','rafael_ribeiro@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (201,'Sabrina Souza','2003-09-23','F',6000.0,'Flamengo','sabrina_souza@example.com'),
+	 (202,'Thiago Lima','1963-12-18','M',4700.0,'Corinthians','thiago_lima@example.com'),
+	 (203,'Ulysses Oliveira','2013-07-16','M',3800.0,'São Paulo','ulysses_oliveira@example.com'),
+	 (204,'Vitória Mendes','1995-06-24','F',5600.0,'Flamengo','vitória_mendes@example.com'),
+	 (205,'Wagner Ribeiro','1956-11-28','M',6200.0,'Corinthians','wagner_ribeiro@example.com'),
+	 (206,'Xuxa Dias','1965-03-15','F',4400.0,'São Paulo','xuxa_dias@example.com'),
+	 (207,'Yasmin Costa','2012-04-12','F',5900.0,'Fluminense','yasmin_costa@example.com'),
+	 (208,'Zeca Nunes','2007-07-09','M',4600.0,'Corinthians','zeca_nunes@example.com'),
+	 (209,'Amanda Rocha','1985-12-25','F',3700.0,'Flamengo','amanda_rocha@example.com'),
+	 (210,'Bruno Nunes','2017-05-17','M',4200.0,'São Paulo','bruno_nunes@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (211,'Camila Mendes','1999-06-01','F',5200.0,'Palmeiras','camila_mendes@example.com'),
+	 (212,'Diego Costa','2006-11-28','M',6000.0,'Corinthians','diego_costa@example.com'),
+	 (213,'Ester Lima','1962-01-18','F',5900.0,'São Paulo','ester_lima@example.com'),
+	 (214,'Felipe Dias','2016-02-09','M',3900.0,'Flamengo','felipe_dias@example.com'),
+	 (215,'Gabriela Rocha','2001-06-16','F',4100.0,'São Paulo','gabriela_rocha@example.com'),
+	 (216,'Henrique Ribeiro','1983-08-25','M',5200.0,'Fluminense','henrique_ribeiro@example.com'),
+	 (217,'Isabela Oliveira','1996-12-04','F',5500.0,'Flamengo','isabela_oliveira@example.com'),
+	 (218,'João Victor','2000-09-09','M',4400.0,'Corinthians','joão_victor@example.com'),
+	 (219,'Karina Dias','1968-02-14','F',4800.0,'São Paulo','karina_dias@example.com'),
+	 (220,'Lucas Rocha','2010-04-24','M',5900.0,'Flamengo','lucas_rocha@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (221,'Mariana Nunes','2015-10-08','F',3700.0,'Corinthians','mariana_nunes@example.com'),
+	 (222,'Nathan Santos','1985-03-28','M',6300.0,'São Paulo','nathan_santos@example.com'),
+	 (223,'Olivia Silva','1999-12-13','F',4600.0,'Palmeiras','olivia_silva@example.com'),
+	 (224,'Pedro Teixeira','2008-07-17','M',5800.0,'Corinthians','pedro_teixeira@example.com'),
+	 (225,'Quitéria Dias','2002-10-01','F',3900.0,'São Paulo','quitéria_dias@example.com'),
+	 (226,'Rafael Costa','1973-06-26','M',4300.0,'Fluminense','rafael_costa@example.com'),
+	 (227,'Sabrina Nunes','1991-01-08','F',6100.0,'Flamengo','sabrina_nunes@example.com'),
+	 (228,'Thiago Silva','1995-11-15','M',5200.0,'Corinthians','thiago_silva@example.com'),
+	 (229,'Ulysses Rocha','2010-12-20','M',4500.0,'São Paulo','ulysses_rocha@example.com'),
+	 (230,'Vitória Dias','2012-03-11','F',5900.0,'Flamengo','vitória_dias@example.com');
+INSERT INTO pessoas (id,nome,data_nascimento,sexo,renda_familiar,time_favorito,email) VALUES
+	 (231,'Wagner Mendes','1952-07-09','M',5700.0,'São Paulo','wagner_mendes@example.com'),
+	 (232,'Xuxa Souza','1988-11-14','F',4600.0,'Palmeiras','xuxa_souza@example.com'),
+	 (233,'Yasmin Lima','2005-08-04','F',3500.0,'Flamengo','yasmin_lima@example.com'),
+	 (234,'Zeca Ribeiro','1990-03-27','M',6000.0,'São Paulo','zeca_ribeiro@example.com');
