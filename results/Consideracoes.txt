@@ -1,0 +1,10 @@
+Opa, eai Jefferson.
+
+Eu utilizei o OneCompiler e salvei os scripts em formato sql, mas as consultas em si estão programadas em MySQL. Tive que pesquisar umas coisas para dar uma desenferrujada haha. Segue o link dos quais utilizei:
+- https://datageeking.wordpress.com/2017/11/23/how-do-i-find-the-next-mondaytuesdayetc-in-sql/~
+- https://onecompiler.com/mysql/wiki
+- https://www.w3resource.com/mysql/date-and-time-functions/mysql-timestampdiff-function.php#google_vignette
+
+E espero ter feito o processo correto via GitHub também kk.
+Obrigado pelo desafio, foi muito maneiro.
+Valeu!
